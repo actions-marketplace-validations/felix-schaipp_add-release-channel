@@ -10,12 +10,16 @@ inputs:
     required: false
     default: null
   monorepo:
-    description: 'boolean flag to indicate if you're using monorepo or not 
+    description: 'boolean flag to indicate if you're using monorepo or not'
     required: false
     default: null   
 outputs:
   release_channel:
     description: 'Complete release channel'
+  buildNumber:
+    description: 'The build number to add to the build channel'
+  monorepo:
+    description: 'Boolean flag to indicate if you're using a monorepo or not'  
 runs:
   using: 'docker'
   image: 'Dockerfile'
