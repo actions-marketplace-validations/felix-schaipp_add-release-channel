@@ -8,7 +8,7 @@ jobs:
     name: Test adding a release channel locally
     steps:
       - name: Add the release channel
-        uses: felix-schaipp/add-release-channel@master
+        uses: felix-schaipp/add-release-channel@main
         id: channel
         with:
           channel: 'alpha'
