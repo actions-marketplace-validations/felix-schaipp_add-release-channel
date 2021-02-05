@@ -20,4 +20,6 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{ inputs.pokemon_id}}
+    - ${{ inputs.channel}}
+    - ${{ inputs.buildNumber}}
+    - ${{ inputs.monorepo}}

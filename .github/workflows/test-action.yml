@@ -15,4 +15,7 @@ jobs:
           buildNumber: null
           monorepo: null
       - name: Check if the release channel was correctly set
-        run: echo "${{ steps.channel.outputs.release_channel }}"
+        run: |
+          echo "${{ steps.channel.outputs.release_channel }}"
+          echo "${{ steps.channel.outputs.buildNumber }}"
+          echo "${{ steps.channel.outputs.monorepo }}"

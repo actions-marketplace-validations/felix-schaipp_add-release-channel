@@ -50,3 +50,7 @@ else
   # Replace in package.json
   sed -i -e 's/'"$oldVersion"'/'"$newVersion"'/' package.json
 fi
+
+echo "::set-output name=release_channel::$channel"
+echo "::set-output name=build_number::$buildNumber"
+echo "::set-output name=monorepo::$monorepo"
