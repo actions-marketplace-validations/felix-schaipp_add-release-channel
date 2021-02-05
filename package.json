@@ -1,0 +1,26 @@
+{
+  "name": "add-release-channel",
+  "version": "1.0.0",
+  "description": "Github action to add a release channel to your package.json",
+  "main": "main.js",
+  "repository": "git@github.com:felix-schaipp/add-release-channel.git",
+  "author": "Felix Schaipp <felix.schaipp@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "format": "prettier --write",
+    "format-check": "prettier --check",
+    "lint": "eslint",
+    "test": "jest"
+  },
+  "keywords": [
+    "github",
+    "actions",
+    "release channel",
+    "add release channel",
+    "release"
+  ],
+  "dependencies": {
+    "@actions/core": "^1.2.6"
+  }
+}

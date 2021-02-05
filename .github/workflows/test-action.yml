@@ -1,0 +1,17 @@
+name: test release channel action
+
+on: 
+  push
+
+jobs:
+  test-add-release-channel:
+  runs-on: ubuntu-latest
+    name: Test adding a release channel locally
+    steps:
+      - name: Add the release channel
+        uses: felix-schaipp/add-release-channel@master
+        id: channel
+        with:
+          pokemon_id: 150
+      - name: Check if the release channel was correctly set
+        run: echo "${{ steps.channel.outputs.release_channel }}"
