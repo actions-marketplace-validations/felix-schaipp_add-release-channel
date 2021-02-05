@@ -4,7 +4,7 @@ on: push
 
 jobs:
   test-add-release-channel:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     name: Test adding a release channel locally
     steps:
       - name: Add the release channel
