@@ -1,10 +1,6 @@
 # Base image
 FROM alpine:latest
 
-# installes required packages for our script
-RUN apk add --no-cache \
-  bash
-
 # Copies your code file  repository to the filesystem
 COPY entrypoint.sh /entrypoint.sh
 
