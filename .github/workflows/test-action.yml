@@ -12,7 +12,7 @@ jobs:
       id: channel
       with:
         channel: 'alpha'
-        buildNumber: $(date +'%H%d%m%Y') # hhddmmyyyy
+        buildNumber: 1807022021 # hhddmmyyyy
     - name: Check if the release channel was correctly set
       run: |
         echo "${{ steps.channel.outputs.release_channel }}"
