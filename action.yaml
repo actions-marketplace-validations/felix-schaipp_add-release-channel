@@ -8,22 +8,13 @@ inputs:
   buildNumber:
     description: 'add the build number to your release'
     required: false
-    default: null
-  monorepo:
-    description: 'boolean flag to indicate if you're using monorepo or not'
-    required: false
-    default: null   
+    default: null  
 outputs:
-  release_channel:
-    description: 'Complete release channel'
-  buildNumber:
-    description: 'The build number to add to the build channel'
-  monorepo:
-    description: 'Boolean flag to indicate if you're using a monorepo or not'  
+  version:
+    description: 'Complete updated version of the package.json'
 runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
     - ${{ inputs.channel}}
     - ${{ inputs.buildNumber}}
-    - ${{ inputs.monorepo}}

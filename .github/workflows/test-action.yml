@@ -7,15 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     name: Test adding a release channel locally
     steps:
-      - name: Add the release channel
-        uses: felix-schaipp/add-release-channel@main
-        id: channel
-        with:
-          channel: 'alpha'
-          buildNumber: null
-          monorepo: null
-      - name: Check if the release channel was correctly set
-        run: |
-          echo "${{ steps.channel.outputs.release_channel }}"
-          echo "${{ steps.channel.outputs.buildNumber }}"
-          echo "${{ steps.channel.outputs.monorepo }}"
+    - name: Add the release channel
+      uses: felix-schaipp/add-release-channel@main
+      id: channel
+      with:
+        channel: 'alpha'
+        buildNumber: $(date +'%H%d%m%Y') # hhddmmyyyy
+    - name: Check if the release channel was correctly set
+      run: |
+        echo "${{ steps.channel.outputs.release_channel }}"
+        echo "${{ steps.channel.outputs.buildNumber }}"
+        echo "${{ steps.channel.outputs.monorepo }}"
