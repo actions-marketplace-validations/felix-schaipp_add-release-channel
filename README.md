@@ -16,7 +16,7 @@ This action adds a release channel to your package.json version
 ### `releaseChannel`
 
 Get the complete output of you package.json `version`. Depending if you used the build number parameter this will look like:
-`"version": "1.2.1.[releaseChannel]-[buildNumber]"`
+`"version": "1.2.1-[releaseChannel]-[buildNumber]"`
 
 ## Example usage
 

@@ -9,8 +9,6 @@ if [ -z "$channel" ]; then
   echo "A release channel is required to use this action"
   exit 1
 fi
-echo $channel
-echo $buildNumber
 
 getOperatingSystem() {
   case "$OSTYPE" in

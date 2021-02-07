@@ -16,4 +16,3 @@ jobs:
     - name: Check if the release channel was correctly set
       run: |
         echo "${{ steps.version.outputs.version }}"
-        echo "${{ steps.version.outputs.buildNumber }}"
