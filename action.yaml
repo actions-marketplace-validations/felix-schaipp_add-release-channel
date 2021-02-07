@@ -14,7 +14,7 @@ outputs:
     description: 'Complete updated version of the package.json'
 runs:
   using: 'docker'
-  image: 'dockerfile'
+  image: 'Dockerfile'
   args:
     - ${{ inputs.channel}}
     - ${{ inputs.buildNumber}}

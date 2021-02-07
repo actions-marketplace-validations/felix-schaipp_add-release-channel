@@ -9,12 +9,11 @@ jobs:
     - uses: actions/checkout@v1 
     - name: Use our release channel action
       uses: felix-schaipp/add-release-channel@main
-      id: channel
+      id: version
       with:
         channel: 'alpha'
         buildNumber: 1807022021 # hhddmmyyyy
     - name: Check if the release channel was correctly set
       run: |
-        echo "${{ steps.channel.outputs.release_channel }}"
-        echo "${{ steps.channel.outputs.buildNumber }}"
-        echo "${{ steps.channel.outputs.monorepo }}"
+        echo "${{ steps.version.outputs.version }}"
+        echo "${{ steps.version.outputs.buildNumber }}"
