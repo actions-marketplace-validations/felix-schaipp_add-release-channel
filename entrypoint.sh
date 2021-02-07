@@ -1,4 +1,4 @@
-#!usr/bin/env bash
+#!/bin/bash
 
 # get the release channel provided by the github action
 channel=${INPUT_CHANNEL}
