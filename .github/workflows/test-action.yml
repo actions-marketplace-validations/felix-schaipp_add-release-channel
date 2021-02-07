@@ -7,7 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Test adding a release channel locally
     steps:
-    - name: Add the release channel
+    - uses: actions/checkout@v2 
+    - name: Use our release channel action
       uses: felix-schaipp/add-release-channel@main
       id: channel
       with:
