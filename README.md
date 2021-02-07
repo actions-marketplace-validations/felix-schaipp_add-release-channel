@@ -1,4 +1,7 @@
-# add-release-channel
+[![license](https://img.shields.io/badge/License-MIT-purple.svg)](LICENSE)
+[![market](https://img.shields.io/badge/Get_it-on_the_Marketplace-informational.svg)](https://github.com/marketplace/actions/add-release-channel)
+
+# General
 This action adds a release channel to your package.json version
 
 ## Inputs
