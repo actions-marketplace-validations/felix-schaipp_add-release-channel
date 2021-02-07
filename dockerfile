@@ -2,8 +2,7 @@
 FROM alpine:latest
 
 RUN apk add --no-cache \
-  bash \
-  ca-certificates
+  bash
 
 # Copies your code file  repository to the filesystem
 COPY entrypoint.sh /entrypoint.sh

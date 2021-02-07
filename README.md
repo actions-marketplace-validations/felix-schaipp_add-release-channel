@@ -24,5 +24,5 @@ Get the complete output of you package.json `version`. Depending if you used the
 uses: felix-schaipp/add-release-channel@main
 with:
   releaseChannel: "beta"
-  buildNumber: $(date +'%H%d%m%Y') # hhddmmyyyy
+  buildNumber: 0402042021 # hhddmmyyyy use a date as the build number
 ```
