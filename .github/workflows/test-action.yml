@@ -8,7 +8,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1 
     - name: Use our release channel action
-      uses: felix-schaipp/add-release-channel@main
+      uses: ./
       id: version
       with:
         channel: 'alpha'
