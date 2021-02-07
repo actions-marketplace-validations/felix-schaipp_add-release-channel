@@ -7,6 +7,7 @@ buildNumber=${INPUT_BUILDNUMBER}
 # return on empty channel (should be covered by github action)
 if [ -z "$channel" ]; then
   echo "A release channel is required to use this action"
+  exit 1
 fi
 echo $channel
 echo $buildNumber
